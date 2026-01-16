@@ -1,9 +1,9 @@
+
 import json, asyncio, logging, os, random, re, time
 from datetime import datetime, timedelta, timezone
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, ReactionTypeEmoji, Bot
 from telegram.ext import Application, CommandHandler, MessageHandler, CallbackQueryHandler, ContextTypes, filters
 
-# إعدادات التسجيل
 logging.basicConfig(level=logging.WARNING)
 
 # قراءة المتغيرات من بيئة Render
@@ -15,7 +15,6 @@ DATA_FILE = "data.json"
 TELEGRAM_CHANNEL_LINK = os.environ.get("TELEGRAM_CHANNEL_LINK", "https://t.me/Wa_Ql_Amlo")
 WHATSAPP_CHANNEL_LINK = os.environ.get("WHATSAPP_CHANNEL_LINK", "https://whatsapp.com/channel/0029VbCFQqqFMqrdjDlO6h0e")
 
-# إيموجيات مضمونة العمل
 GUARANTEED_REACTION_EMOJIS = ["❤️", "🔥", "⭐", "👍", "🎉", "😍", "👏", "🙏", "🤲", "🕋"]
 ISLAMIC_REACTION_EMOJIS = ["❤️", "🤲", "🙏", "⭐", "🕋", "☪️", "🕌", "📿", "🕯️", "📖"]
 
